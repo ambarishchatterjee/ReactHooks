@@ -12,6 +12,7 @@ import ProductDetails from './Hooks/useParams/ProductDetails';
 import ProductList from './Hooks/useParams/ProductList';
 import Child from './Hooks/useContext/child';
 import Parent from './Hooks/useContext/parent';
+import BucketList from './Hooks/useState/BucketList';
 /* import ColorPicker from "./Hooks/useState/ColorPicker";
 import Incre from "./Hooks/useState/incre"; */
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path='/' element={<ProductList />} />
             <Route path='/users/:id' element={<ProductDetails />} />
             <Route path='/child' element={<Child />} />
+            <Route path='/usestate/bucketlist' element={<BucketList />} />
           </Routes>
         </Parent>
       </Router>
